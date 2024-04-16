@@ -1,0 +1,86 @@
+.logos-slide img {
+    height: 70px;
+    margin: 0 40px;
+}
+
+.logos-slide{
+    display: inline-block;
+    animation: 10s slide infinite linear;
+    padding: -10%;
+}
+
+.logos{
+    overflow: hidden;
+    padding: 60px 0;
+    background: #f0f0f0;
+    white-space: nowrap;
+    position: relative;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;  
+}
+
+.logos::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255, 0), #f0f0f0);
+}
+
+.logos::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255, 0), #f0f0f0);
+}
+
+.logos::before,
+.logos::after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.encabezado-img{
+	background-image: url(https://i.ibb.co/HgPd4Qg/banner.png);
+	background-size: cover;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.encabezado-img p{
+	font-size: 70px;
+}
+.encabezado-img h1{
+	font-size: 100px;
+	padding: 15px 0;
+
+}
+
+#p2{
+    font-size: 20px;
+}
+
+#h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 100px;
+}

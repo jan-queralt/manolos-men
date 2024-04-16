@@ -1,0 +1,32 @@
+.container-2 {
+    display: flex;
+    align-items: center;
+}
+
+.image-logo {
+    width: 200px;
+    height: auto; 
+    margin-right: 20px;
+}
+
+.text-logo {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+p{
+    text-align: justify;
+    font-size: 19px;
+    margin-right: 200px;
+}
+
+.image-2:hover{
+    transform: scale(1.1);
+}
+
+h2{
+    margin-top: 70px;
+    font-size: 70px;
+    text-align: center;
+    padding: 10px;
+}
